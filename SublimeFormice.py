@@ -40,7 +40,6 @@ class TFM:
 		if self.transformice_api_data != "":
 			list_of_func = get_json(self.transformice_api_data.get("functions"))
 			for function_name in list_of_func:
-				print(function_name)
 				if list_of_func[function_name]["type"] == "function":
 					self.add_function(function_name, list_of_func[function_name])		
 				if list_of_func[function_name]["type"] == "method":
@@ -79,25 +78,12 @@ def get_json(s_string):
 	return json.loads(json.dumps(s_string))
 
 
-class SublimeFormice(TFM, sublime_plugin.EventListener):
-
-	def run(self):
-		try:
-			self.settings = sublime.load_settings("SublimeFormice.sublime-setting")
-			self.transformice_api_data = sublime.load_settings(self.settings.get("language") + "-SublimeFormice.sublime-language")	
-		except:pass		
-	def on_post_save(self, view):
-		print(view)
+class SublimeFormiceEvent(TFM, sublime_plugin.EventListener):
 
 	def on_query_completions(self, view, prefix, locations):
 		curr_file = view.file_name()
 		completions = []
-		print(view)
 		if is_lua(curr_file):
 			return self.get_autocomplete(prefix)
 			completions.sort()
 		return (completions,sublime.INHIBIT_EXPLICIT_COMPLETIONS)
-
-	def plugin_loaded():
-		self.settings = sublime.load_settings("SublimeFormice.sublime-setting")
-		self.transformice_api_data = sublime.load_settings(self.settings.get("language") + "-SublimeFormice.sublime-language")			
