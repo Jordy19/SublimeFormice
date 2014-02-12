@@ -81,6 +81,11 @@ def get_json(s_string):
 
 class SublimeFormice(TFM, sublime_plugin.EventListener):
 
+	def run(self):
+		try:
+			self.settings = sublime.load_settings("SublimeFormice.sublime-setting")
+			self.transformice_api_data = sublime.load_settings(self.settings.get("language") + "-SublimeFormice.sublime-language")	
+		except:pass		
 	def on_post_save(self, view):
 		print(view)
 
