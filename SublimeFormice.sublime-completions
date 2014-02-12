@@ -1,0 +1,95 @@
+{
+        "scope": "",
+
+        "completions":
+        [
+                { 
+                	"trigger": "eventChatCommand", 
+                	"contents": "function eventChatCommand(playerName, message)\n	if message == 'command' then\n		$0\n	end\nend"
+                },
+                { 
+                	"trigger": "eventEmotePlayed", 
+                	"contents": "function eventEmotePlayed(playerName, emoteId)\n	if emoteId == 1 then\n		$0\n	end\nend"
+                },
+                { 
+                        "trigger": "eventFileLoaded", 
+                        "contents": "function eventFileLoaded(fileName, file)\n   $0\nend"
+                },
+                { 
+                        "trigger": "eventFileSaved", 
+                        "contents": "function eventFileSaved(fileName)\n   $0\nend"
+                },
+                { 
+                        "trigger": "eventKeyboard", 
+                        "contents": "function eventKeyboard(playerName, keyCode, down, xPlayerPosition, yPlayerPosition)\n   $0\nend"
+                },
+                { 
+                        "trigger": "eventmouse", 
+                        "contents": "function eventKeyboard(playerName, xMousePosition, yMousePosition)\n   $0\nend"
+                },
+                { 
+                        "trigger": "eventloop", 
+                        "contents": "function eventLoop(currentTime, timeRemaining)\n   $0\nend"
+                },
+                { 
+                        "trigger": "eventNewGame", 
+                        "contents": "function eventNewGame()\n   $0\nend"
+                },
+                { 
+                        "trigger": "eventNewPlayer", 
+                        "contents": "function eventNewPlayer(playerName)\n   $0\nend"
+                },
+                { 
+                        "trigger": "eventPlayerDataLoaded", 
+                        "contents": "function eventPlayerDataLoaded(playerName, data)\n   $0\nend"
+                },
+                { 
+                        "trigger": "eventPlayerDied", 
+                        "contents": "function eventPlayerDied(playerName)\n   $0\nend"
+                },
+                { 
+                        "trigger": "eventPlayerGetCheese", 
+                        "contents": "function eventPlayerGetCheese(playerName)\n   $0\nend"
+                },
+                { 
+                        "trigger": "eventPlayerLeft", 
+                        "contents": "function eventPlayerLeft(playerName)\n   $0\nend"
+                },
+                { 
+                        "trigger": "eventPlayerVampire", 
+                        "contents": "function eventPlayerVampire(playerName)\n   $0\nend"
+                },
+                { 
+                        "trigger": "eventPlayerWon", 
+                        "contents": "function eventPlayerWon(playerName)\n   $0\nend"
+                },
+                { 
+                        "trigger": "eventPlayerRespawn", 
+                        "contents": "function eventPlayerRespawn(playerName)\n   $0\nend"
+                },
+                { 
+                        "trigger": "eventPopupAnswer", 
+                        "contents": "function eventPopupAnswer(popupId, playerName, answer)\n   $0\nend"
+                },
+                { 
+                        "trigger": "eventSummoningStart", 
+                        "contents": "function eventSummoningStart(playerName, objectType, xPosition, yPosition, angle)\n   $0\nend"
+                },
+                { 
+                        "trigger": "eventSummoningCancel", 
+                        "contents": "function eventSummoningStart(playerName)\n   $0\nend"
+                },
+                { 
+                        "trigger": "eventSummoningEnd", 
+                        "contents": "function eventSummoningStart(playerName, objectType, xPosition, yPosition, angle, xSpeed, ySpeed, objectType, other)\n   $0\nend"
+                },
+                { 
+                        "trigger": "eventTextAreaCallback", 
+                        "contents": "function eventTextAreaCallback(textAreaId, playerName, callback)\n   $0\nend"
+                },
+                { 
+                        "trigger": "eventTextAreaCallback", 
+                        "contents": "function eventTextAreaCallback(textAreaId, playerName, callback)\n   $0\nend"
+                }                                                                   
+        ]
+}
