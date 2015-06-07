@@ -293,12 +293,12 @@
         "tfm.exec.addJoint": {
             "description" : "Adds a joint between two physic objects",
             "args" : "id, physicObject1, physicObject2, jointDef",
-            "Type" : "function"
+            "type" : "function"
         },
         "tfm.exec.addPhysicObject": {
             "description" : "Adds a physic object into the game",
             "args" : "id, xPosition, yPosition, bodyDef",
-            "Type" : "function"
+            "type" : "function"
         }               
     }
 }

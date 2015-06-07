@@ -3,9 +3,10 @@ SublimeFormice
 
 ### Change log
 
-##24 Juli 2014
-''Added'' tfm.exec.addJoint()
+#####7 Juni 2015
+* ''Fixed'' The tooltip will not appear when you type "print()" and so on.
 
-''Added'' tfm.exec.addPhysicObject()
-
-''Fixed'' Python 3 compatibility.
+#####24 Juli 2014
+* ''Added'' tfm.exec.addJoint()
+* ''Added'' tfm.exec.addPhysicObject()
+* ''Fixed'' Python 3 compatibility.
