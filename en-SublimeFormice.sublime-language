@@ -1,7 +1,7 @@
 {
     "functions" : {
         "print" : {
-            "description" : "Prsomething.",
+            "description" : "Print something.",
             "args" : "something",
             "type" : "function"
         },
