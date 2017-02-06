@@ -112,7 +112,7 @@
         },
         "tfm.exec.bindKeyboard" : {
             "description" : "Listens to the player's keyboard events.",
-            "args" : "playerName, keyCode, down, yes",
+            "args" : "playerName, keyCode, down, activate",
             "type" : "function"
         },
         "tfm.exec.chatMessage" : {
