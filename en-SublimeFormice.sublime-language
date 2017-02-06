@@ -64,10 +64,30 @@
             "description" : "Enables or deactivates the timers log.",
             "args" : "yes",
             "type" : "function"
+        },
+        "tfm.exec.disableDebugCommand" : {
+            "description" : "Disables the effects of the /debug command.",
+            "args" : "activate",
+            "type" : "function"
+        },    
+        "tfm.exec.disableMinimalistMode" : {
+            "description" : "Disables the minimalist mode.",
+            "args" : "activate",
+            "type" : "function"
+        },      
+        "tfm.exec.disableMortCommand" : {
+            "description" : "Disables the /mort command.",
+            "args" : "activate",
+            "type" : "function"
+        },      
+        "tfm.exec.disableWatchCommand" : {
+            "description" : "Disables the effects of the /watch command.",
+            "args" : "activate",
+            "type" : "function"
         },      
         "tfm.exec.addImage" : {
             "description" : "Add an image to the map.",
-            "args" : "imageName, target, xPosition, yPosition, targetPlayer",
+            "args" : "imageId, target, xPosition, yPosition, targetPlayer",
             "type" : "function"
         },      
         "tfm.exec.removeImage" : {
@@ -95,9 +115,14 @@
             "args" : "id, targetPlayer",
             "type" : "function"
         },
+        " ui.showColorPicker" : {
+            "description" : "Displays a color picker.",
+            "args" : "id, targetPlayer, deaultColor, title",
+            "type" : "function"
+        },
         "tfm.exec.addConjuration" : {
             "description" : "Add conjuration to the map.",
-            "args" : "xPosition, yPosition, timeInMillis",
+            "args" : "xPosition, yPosition, duration",
             "type" : "function"
         },
         "tfm.exec.addShamanObject" : {
@@ -117,32 +142,32 @@
         },
         "tfm.exec.disableAfkDeath" : {
             "description" : "Desactivates the automatic afk death.",
-            "args" : "yes",
+            "args" : "activate",
             "type" : "function"
         },
         "tfm.exec.disableAllShamanSkills" : {
             "description" : "Desactivates all shaman skills.",
-            "args" : "yes",
+            "args" : "activate",
             "type" : "function"
         },
         "tfm.exec.disableAutoNewGame" : {
             "description" : "Deactivates the automatic renewal of rounds.",
-            "args" : "yes",
+            "args" : "activate",
             "type" : "function"
         },
         "tfm.exec.disableAutoScore" : {
             "description" : "Deactivates the automatic scoring management.",
-            "args" : "yes",
+            "args" : "activate",
             "type" : "function"
         },
         "tfm.exec.disableAutoShaman" : {
             "description" : "Deactivates the automatic selection of Shaman.",
-            "args" : "yes",
+            "args" : "activate",
             "type" : "function"
         },
         "tfm.exec.disableAutoTimeLeft" : {
             "description" : "Deactivates the automatic time change.",
-            "args" : "yes",
+            "args" : "activate",
             "type" : "function"
         },
         "tfm.exec.displayParticle" : {
@@ -165,6 +190,11 @@
             "args" : "playerName",
             "type" : "function"
         },
+        "tfm.exec.giveConsumables" : {
+            "description" : "Gives consumables to the targeted player.",
+            "args" : "playerName, consumableId, amount",
+            "type" : "function"
+        },
         "tfm.exec.killPlayer" : {
             "description" : "Kills the selected player.",
             "args" : "playerName",
@@ -172,17 +202,17 @@
         },
         "tfm.exec.moveObject" : {
             "description" : "Defines the speed and position of an object.",
-            "args" : "objectId, xPosition, yPosition, offset, xSpeed, ySpeed, offset",
+            "args" : "objectId, xPosition, yPosition, positionOffset, xSpeed, ySpeed, speedOffset, angle, angleOffset",
             "type" : "function"
         },
         "tfm.exec.movePlayer" : {
             "description" : "Defines the speed and position of a player.",
-            "args" : "playerName, xPosition, yPosition, offset, xSpeed, ySpeed, offset",
+            "args" : "playerName, xPosition, yPosition, positionOffset, xSpeed, ySpeed, speedOffset",
             "type" : "function"
         },
         "tfm.exec.newGame" : {
             "description" : "Launch a new game. Use : 6 (vanilla map), @42583 (editor map), *#4 (perm category map), begin with '<' (xml map)",
-            "args" : "mapCode",
+            "args" : "mapCode, flipped",
             "type" : "function"
         },
         "tfm.exec.playerVictory" : {
@@ -191,12 +221,27 @@
             "type" : "function"
         },
         "tfm.exec.removeObject" : {
+            "description" : "Remove a shaman object.",
+            "args" : "objectId",
+            "type" : "function"
+        },
+        "tfm.exec.removePhyschicObject" : {
             "description" : "Remove a physical object.",
             "args" : "objectId",
             "type" : "function"
         },
         "tfm.exec.respawnPlayer" : {
             "description" : "Respawn a player.",
+            "args" : "playerName",
+            "type" : "function"
+        },
+        "tfm.exec.playEmote" : {
+            "description" : "Respawn a player.",
+            "args" : "playerName, emoteId, emoteArg",
+            "type" : "function"
+        },
+        "tfm.exec.lowerSyncDelay" : {
+            "description" : "Lowers the synchronization delay of a player to 400ms max.",
             "args" : "playerName",
             "type" : "function"
         },
@@ -220,9 +265,19 @@
             "args" : "maxPlayers",
             "type" : "function"
         },
+        "tfm.exec.setRoomPassword" : {
+            "description" : "Password-protects a room.",
+            "args" : "password",
+            "type" : "function"
+        },
         "tfm.exec.setShaman" : {
             "description" : "Set a shaman.",
             "args" : "playerName",
+            "type" : "function"
+        },
+        "tfm.exec.setAutoMapFlipMode" : {
+            "description" : "Sets whether the following maps should be flipped (always, never, or TFM's default behaviour).",
+            "args" : "activate",
             "type" : "function"
         },
         "tfm.exec.setUIMapName" : {
