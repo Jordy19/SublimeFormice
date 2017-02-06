@@ -15,6 +15,11 @@
             "args" : "callback, time, loop, arg1, arg2, arg3, arg4",
             "type" : "function"
         },
+        "system.giveEventGift" : {
+            "description" : "Gives an event reward to the targeted player.",
+            "args" : "playerName, giftCode",
+            "type" : "function"
+        },
         "system.removeTimer" : {
             "description" : "",
             "args" : "timerId",
