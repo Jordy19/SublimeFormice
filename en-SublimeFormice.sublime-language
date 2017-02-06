@@ -52,7 +52,7 @@
         },
         "system.disableChatCommandDisplay" : {
             "description" : "Deactivates the display of a command in the chat window (100 max).",
-            "args" : "command, yes",
+            "args" : "command, activate",
             "type" : "function"
         },      
         "system.bindMouse" : {
