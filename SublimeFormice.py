@@ -66,14 +66,14 @@ class TFM:
 
 		for function_name in self.transformice_func:
 			if word in function_name.name:
-				method_str_to_append = function_name.name + '(' + function_name.arguments+ ')'
+				method_str_to_append = function_name.name #+ '(' + function_name.arguments+ ')'
 				method_file_location = function_name.description;
-				autocomplete_list.append((method_str_to_append + '\t' + method_file_location,method_str_to_append)) 		
+				autocomplete_list.append(("{0:70}\t{0}".format(method_str_to_append, method_file_location),method_str_to_append)) 		
 		for function_name in self.transformice_methods:
 			if word in function_name.name:
 				method_str_to_append = function_name.name
 				method_file_location = function_name.description
-				autocomplete_list.append((method_str_to_append + '\t' + method_file_location,method_str_to_append)) 		
+				autocomplete_list.append(("{0:70}\t{1}".format(method_str_to_append, method_file_location),method_str_to_append)) 		
 													
 		return autocomplete_list	
 
