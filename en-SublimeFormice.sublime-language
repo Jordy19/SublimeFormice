@@ -57,7 +57,7 @@
         },      
         "system.bindMouse" : {
             "description" : "Listens to the player's mouse events.",
-            "args" : "playerName, yes",
+            "args" : "playerName, active",
             "type" : "function"
         },
         "debug.disableEventLog" : {
