@@ -21,11 +21,6 @@
             "type" : "function"
         },
         "system.removeTimer" : {
-            "description" : "",
-            "args" : "timerId",
-            "type" : "function"
-        },
-        "system.removeTimer" : {
             "description" : "Remove a timer.",
             "args" : "timerId",
             "type" : "function"
