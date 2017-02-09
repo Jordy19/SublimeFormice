@@ -89,7 +89,7 @@
             "description" : "Add an image to the map.",
             "args" : "imageId, target, xPosition, yPosition, targetPlayer",
             "type" : "function"
-        },      
+        },  
         "tfm.exec.removeImage" : {
             "description" : "Remove an image.",
             "args" : "imageId",
@@ -354,6 +354,11 @@
             "description" : "Adds a physic object into the game",
             "args" : "id, xPosition, yPosition, bodyDef",
             "type" : "function"
-        }               
+        },
+        "tfm.exec.disablePhysicalConsumables": {
+            "description" : "Deactivates physical consumables (like in racing and bootcamp rooms).",
+            "args" : "activate",
+            "type" : "function" 
+        }
     }
 }
